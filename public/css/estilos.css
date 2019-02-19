@@ -1,0 +1,32 @@
+.frase, .campo-digitacao {
+    font-size: 20px;
+}
+
+.frase {
+    text-align: left;
+}
+
+.campo-digitacao {
+    height: 130px;
+    border: 3px solid black;
+}
+
+.campo-desabilitado{
+    background-color: lightslategray;
+}
+
+.campo-erro{
+    border: 3px solid red;
+}
+
+.campo-correto{
+    border: 3px solid green;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.desabilitado {
+    background-color: darkred !important;
+}

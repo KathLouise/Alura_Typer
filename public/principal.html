@@ -2,25 +2,66 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/libs/materialize.min.css">
+        <link rel="stylesheet" href="css/libs/google-fonts.css">
+        <link rel="stylesheet" href="css/estilos.css">
         <title>Alura Typer</title>
     </head>
     <body>
-        <h1>Alura Typer</h1>
-        <p class="frase">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-        <ul>
-            <li><span class="tamanho-frase">30</span> palavras</li>
-            <li><span class="tempo-digitacao">10</span> segundos</li>
-        </ul>
-
-        <textarea class="campo-digitacao" id="" cols="50" rows="10"></textarea>
-        <button id="btn-reinicia">Reiniciar Jogo</button>
-        <ul>
-            <li><span class="qtd-caracteres">0</span> caracteres</li>
-            <li><span class="qtd-palavras">0</span> palavras</li>
-        </ul>
+        <div class="container">
+            <h1 class="center">Alura Typer</h1>
+            <p class="frase center">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         
+            <ul class="center">
+                <li>
+                    <i class="small material-icons icones">description</i>
+                    <span class="tamanho-frase">30</span> palavras
+                </li>
+                <li>
+                    <i class="small material-icons icones">query_builder</i>
+                    <span class="tempo-digitacao">10</span> segundos
+                </li>
+            </ul>
+        
+            <textarea class="campo-digitacao" id="" cols="50" rows="10"></textarea>
+            <div class="buttons">
+                <a class="btn-floating btn-large waves-effect waves-light red" id="btn-reinicia"><i class="material-icons">restore</i></a>
+            </div>
+            <ul class="center">
+                <li><span class="qtd-caracteres">0</span> caracteres</li>
+                <li><span class="qtd-palavras">0</span> palavras</li>
+            </ul>
+
+            <section class="placar">
+                <h3 class="center">Placar</h3>
+                <table class="centered bordered">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nº de Palavras</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João</td>
+                            <td>20</td>
+                            <td>
+                                <a href="#" class="removerLinha">
+                                    <i class="small material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </body>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/auxiliares.js"></script>
+    <script src="js/contadores.js"></script>
+    <script src="js/finaliza-reinicia.js"></script>
 </html>
